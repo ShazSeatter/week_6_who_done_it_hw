@@ -1,36 +1,36 @@
-// EPISODE 1
+// // EPISODE 1
 
-// object
-// const scenario = {
-//     murderer: 'Miss Scarlet',
-//     room: 'Library',
-//     weapon: 'Rope'
-//   };
+// // object
+// // const scenario = {
+// //     murderer: 'Miss Scarlet',
+// //     room: 'Library',
+// //     weapon: 'Rope'
+// //   };
 
-// // function getting key value for murderer
-//   const declareMurderer = function() {
-//     return `The murderer is ${scenario.murderer}.`;
-//   }
+// // // function getting key value for murderer
+// //   const declareMurderer = function() {
+// //     return `The murderer is ${scenario.murderer}.`;
+// //   }
 
-// // saving return value in new variable 
-//   const verdict = declareMurderer();
-//   console.log(verdict);
+// // // saving return value in new variable 
+// //   const verdict = declareMurderer();
+// //   console.log(verdict);
 
-// ANSWER 
-////// Miss Scarlet 
+// // ANSWER 
+// ////// Miss Scarlet 
 
-// EPISODE 2
+// // EPISODE 2
 
 
-// const needs to be let so the variable can be reassigned 
+// // const needs to be let so the variable can be reassigned 
 // let murderer = 'Professor Plum';
 
-// // needs access to outside variable 
-// let changeMurderer = function() {
+// // // needs access to outside variable 
+// const changeMurderer = function() {
 //   murderer = 'Mrs. Peacock';
 // }
 
-// // variable is on the outside so this function has access to it 
+// // // variable is on the outside so this function has access to it 
 // const declareMurderer = function() {
 //   return `The murderer is ${murderer}.`;
 // }
@@ -40,11 +40,11 @@
 
 // console.log(verdict);
 
-// ANSWER 
-/////// Mrs.Peacock
+// // ANSWER 
+// /////// Mrs.Peacock
 
 
-// EPISODE 3
+// // EPISODE 3
 
 
 // let murderer = 'Professor Plum';
@@ -64,13 +64,13 @@
 // console.log('Second Verdict: ', secondVerdict);
 
 
-// ANSWER 
-//////// firstVerdict = Mrs.Peacock
-//////// secondVerdict = Professor Plum
+// // ANSWER 
+// //////// firstVerdict = Mrs.Peacock
+// //////// secondVerdict = Professor Plum
 
 
 
-// EPISODE 4
+// // EPISODE 4
 
 // let suspectOne = 'Miss Scarlet';
 // let suspectTwo = 'Professor Plum';
@@ -86,18 +86,18 @@
 // console.log(suspects);
 // console.log(`Suspect three is ${suspectThree}.`);
 
-// ANSWER 
-//////// Mrs.Peacock
+// // ANSWER 
+// //////// Mrs.Peacock
 
 
-// Episode 5 
+// // Episode 5 
 // const scenario = {
 //     murderer: 'Miss Scarlet',
 //     room: 'Kitchen',
 //     weapon: 'Candle Stick'
 //   };
   
-// chaning value of key weapon 
+// // chaning value of key weapon 
 //   const changeWeapon = function(newWeapon) {
 //     scenario.weapon = newWeapon;
 //   }
@@ -110,10 +110,10 @@
 //   const verdict = declareWeapon();
 //   console.log(verdict);
 
-// ANSWER 
-////////// The weapon is the revolver
+// // ANSWER 
+// ////////// The weapon is the revolver
 
-// EPISODE 6
+// // EPISODE 6
 
 // let murderer = 'Colonel Mustard';
 
@@ -135,10 +135,10 @@
 // const verdict = declareMurderer();
 // console.log(verdict);
 
-// ANSWER
-//////// Mrs. White
+// // ANSWER
+// //////// Mrs. White
 
-// EPISODE 7
+// // EPISODE 7
 
 // let murderer = 'Professor Plum';
 
@@ -167,10 +167,15 @@
 // const verdict = declareMurderer();
 // console.log(verdict);
 
-// ANSWER
-//////// Mr. Green
+// // ANSWER
+// //////// Mr. Green
 
-// EPISODE 8
+
+
+
+
+
+// // EPISODE 8
 // const scenario = {
 //     murderer: 'Mrs. Peacock',
 //     room: 'Conservatory',
@@ -214,16 +219,17 @@
 //   console.log(verdict);
 
 
-  // ANSWER
-  /////// 
-  // murder now colonel mustard 
-  // room now dining room 
-  // weapon candle stick 
+//   // ANSWER
+//   /////// 
+//   // murder now colonel mustard 
+//   // room now dining room 
+//   // weapon candle stick 
 
-  // verdict = The weapon is candle stick 
+//   // verdict = The weapon is candle stick 
 
 
-  // EPISODE 9
+
+//   // EPISODE 9
 
 // let murderer = 'Professor Plum';
 
@@ -239,30 +245,30 @@
 // console.log(verdict);
 
 // ANSWER
-///// The murderer is Professor Plum 
+// /// The murderer is Professor Plum 
 
 
-// EPISODE 10 - EXTENSION
+// // EPISODE 10 - EXTENSION
 
-let murderer = 'Miss Scarlet';
-let weapon = 'Rope'
-let room = 'Kitchen'
+// let murderer = 'Miss Scarlet';
+// let weapon = 'Rope'
+// let room = 'Kitchen'
 
 
-const changeWeapon = function() {
-    weapon = 'Candle Stick';
+// const changeWeapon = function() {
+//     weapon = 'Candle Stick';
 
-    const changeRoom = function(newRoom) {
-        room = newRoom;
-    }
+//     const changeRoom = function(newRoom) {
+//         room = newRoom;
+//     }
 
-    changeRoom('Conservatory');
-};
+//     changeRoom('Conservatory');
+// };
 
-const declareMurderScenario = function() {
-    return `The murderer is ${murderer}, in the ${room}, with the ${weapon}.`;
-};
+// const declareMurderScenario = function() {
+//     return `The murderer is ${murderer}, in the ${room}, with the ${weapon}.`;
+// };
 
-changeWeapon();
-const verdict = declareMurderScenario();
-console.log(verdict);
+// changeWeapon();
+// const verdict = declareMurderScenario();
+// console.log(verdict);
